@@ -108,6 +108,7 @@ Negative balances are permitted.
 - Represent a user's financial account.
 - Provide the basis for calculating current balance.
 - Maintain account lifecycle state.
+- Determine whether the opening balance is still directly modifiable based on the Account's financial history.
 
 ## Invariants
 
@@ -117,6 +118,8 @@ Negative balances are permitted.
 4. Historical financial records remain accessible after deactivation.
 5. An inactive Account cannot receive a new Transaction.
 6. Negative balances are permitted.
+7. The opening balance may be directly modified only while the Account has no TransactionEffects and no Adjustments.
+8. Once a TransactionEffect or Adjustment exists, corrections to the opening balance must be represented through an Adjustment.
 
 ---
 
