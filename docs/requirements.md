@@ -39,6 +39,9 @@ The MVP is a single-user personal finance application.
 - Financial goals
 - Automated recurring-transaction detection
 - Birthday functionality
+- Debt repayment
+
+Debt repayment is deferred because the MVP does not yet define the domain behavior required to accurately represent liability reduction, including the relationship between repayment, debt principal, and interest.
 
 ## 4. User
 
@@ -104,7 +107,6 @@ Supported transaction types:
 - Expense
 - Income
 - Transfer
-- Debt repayment
 
 Required information:
 
