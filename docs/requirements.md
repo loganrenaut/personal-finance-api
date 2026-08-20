@@ -88,6 +88,14 @@ Account status is limited to:
 
 Inactive accounts remain visible and retain their historical financial information.
 
+### Opening Balance Modification
+
+An account's opening balance may be directly modified only while the account has no TransactionEffects and no Adjustments.
+
+Once a TransactionEffect or Adjustment exists, the opening balance cannot be directly modified. Corrections to the initial financial state must instead be represented through an Adjustment.
+
+This preserves the distinction between the account's initial state, financial events, and corrections to recorded financial state.
+
 ## 6. Balance
 
 The current account balance is derived from:
