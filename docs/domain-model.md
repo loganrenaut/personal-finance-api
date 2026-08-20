@@ -126,6 +126,8 @@ Negative balances are permitted.
 
 A Transaction represents a financial event recorded by the User that produces one or more financial effects on Accounts.
 
+The Transaction amount represents the positive financial magnitude of the event. The directional impact on an Account is represented by its associated TransactionEffect(s).
+
 ## Attributes
 
 | Attribute | Type | Required | Description |
