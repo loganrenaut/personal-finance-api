@@ -164,6 +164,8 @@ The Transaction amount represents the positive financial magnitude of the event.
 - Identify the event's type.
 - Maintain the event's financial amount and information.
 - Define the financial event from which its effects are derived.
+- Validate that a new Transaction only affects active Accounts.
+- Recalculate associated TransactionEffects when an existing Transaction is edited.
 
 ## Invariants
 
@@ -174,6 +176,9 @@ The Transaction amount represents the positive financial magnitude of the event.
 5. New TransactionEffects cannot affect inactive Accounts.
 6. Transactions are editable but cannot be deleted in the MVP.
 7. Editing a Transaction must preserve all Transaction invariants.
+8. A new Transaction cannot affect an inactive Account.
+9. An existing Transaction may be edited even if an affected Account is inactive.
+10. Editing a Transaction may recalculate its associated TransactionEffects and the affected Account's derived balance.
 
 ---
 
