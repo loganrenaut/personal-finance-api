@@ -6,6 +6,12 @@ Plethora's domain model represents an individual's personal financial state thro
 
 The current account balance is derived rather than directly stored as an independently editable value.
 
+## MVP Boundary
+
+The MVP supports a single User and does not implement multi-user interaction or cross-user financial operations.
+
+All Accounts, Transactions, TransactionEffects, Adjustments, and AlertConfigurations belong to the same User within the MVP.
+
 ### Balance Formula
 
 Balance = Opening Balance + Sum(Transaction Effects) + Sum(Adjustments)
