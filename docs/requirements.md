@@ -127,6 +127,22 @@ Transaction amounts must be greater than zero.
 
 Transactions are editable but cannot be deleted in the MVP.
 
+### Transaction Amount and Direction
+
+The transaction amount represents the positive financial magnitude of the event.
+
+The direction of the financial impact is represented by the associated TransactionEffect(s), rather than by the Transaction amount itself.
+
+For example, an expense of €70 is represented as:
+
+Transaction:
+- Type: Expense
+- Amount: €70
+
+TransactionEffect:
+- Account: Checking
+- Amount: -€70
+
 ## 8. Transaction Effects
 
 A transaction effect represents the signed financial impact of a transaction on one specific account.
