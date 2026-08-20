@@ -211,6 +211,16 @@ Existing transactions may be edited provided the resulting transaction remains v
 
 Adjustments may be made to inactive accounts.
 
+### Inactive Account Transaction Rules
+
+An inactive account cannot be affected by new transactions.
+
+Existing transactions associated with an inactive account remain editable so that the user can correct historical financial records.
+
+Editing an existing transaction may recalculate its TransactionEffects and the account's derived balance.
+
+Adjustments may affect inactive accounts because they represent corrections to recorded financial state.
+
 ## 11. Alert Configuration
 
 An alert configuration defines a balance threshold for an account.
