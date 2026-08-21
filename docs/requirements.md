@@ -160,7 +160,6 @@ A transaction may have:
 - One effect for an expense
 - One effect for an income
 - Two effects for a transfer
-- One effect for a debt repayment
 
 Transaction effects cannot affect inactive accounts.
 
@@ -201,9 +200,9 @@ An account can be:
 - ACTIVE
 - INACTIVE
 
-Active accounts may receive new transactions.
+Active accounts may be affected by new transactions.
 
-Inactive accounts cannot receive new transactions.
+Inactive accounts cannot be affected by new transactions.
 
 Historical transactions and adjustments remain accessible.
 
