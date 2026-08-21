@@ -150,7 +150,6 @@ The Transaction amount represents the positive financial magnitude of the event.
 - Expense
 - Income
 - Transfer
-- Debt Repayment
 
 ## Relationships
 
@@ -237,10 +236,6 @@ Exactly two effects:
 - One positive effect
 - Equal absolute values
 - Net effect equals zero
-
-### Debt Repayment
-
-Exactly one negative effect.
 
 ---
 
@@ -404,6 +399,5 @@ Therefore:
 - Expenses affect exactly one Account.
 - Income affects exactly one Account.
 - Transfers affect exactly two Accounts.
-- Debt repayments affect exactly one Account.
 
 More complex transaction distributions may be considered in a future version.
